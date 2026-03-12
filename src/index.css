@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap');
+>>>>>>> madhavi/main
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +10,7 @@
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: 0 0% 97%;
     --foreground: 220 20% 14%;
 
@@ -66,6 +71,82 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+=======
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 199 89% 48%;
+    --radius: 0.75rem;
+
+    /* Status colors */
+    --status-green-text: 143 64% 24%;
+    --status-green-bg: 138 76% 97%;
+    --status-green-ring: 142 69% 58%;
+    --status-yellow-text: 41 96% 40%;
+    --status-yellow-bg: 55 92% 95%;
+    --status-yellow-ring: 48 96% 53%;
+    --status-red-text: 0 63% 31%;
+    --status-red-bg: 0 86% 97%;
+    --status-red-ring: 0 91% 71%;
+
+    /* Surface shadows */
+    --shadow-card: 0 0 0 1px rgba(15,23,42,0.04), 0 1px 2px -1px rgba(15,23,42,0.06), 0 2px 4px rgba(15,23,42,0.04);
+    --shadow-elevated: 0 0 0 1px rgba(15,23,42,0.04), 0 4px 6px -1px rgba(15,23,42,0.08), 0 8px 16px rgba(15,23,42,0.06);
+
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 199 89% 48%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 199 89% 48%;
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 199 89% 48%;
+>>>>>>> madhavi/main
   }
 }
 
@@ -74,15 +155,21 @@
     @apply border-border;
   }
   body {
+<<<<<<< HEAD
     @apply bg-background text-foreground;
     font-family: var(--font-body);
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+=======
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+>>>>>>> madhavi/main
   }
 }
 
 @layer utilities {
+<<<<<<< HEAD
   .text-gradient-hero {
     background: var(--gradient-hero);
     -webkit-background-clip: text;
@@ -94,6 +181,11 @@
   }
   .bg-gradient-dark {
     background: var(--gradient-dark);
+=======
+  .font-mono-data {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+>>>>>>> madhavi/main
   }
   .shadow-card {
     box-shadow: var(--shadow-card);
@@ -101,7 +193,18 @@
   .shadow-elevated {
     box-shadow: var(--shadow-elevated);
   }
+<<<<<<< HEAD
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+=======
+  .status-green {
+    @apply text-status-green-text bg-status-green-bg ring-1 ring-inset ring-status-green-ring/20;
+  }
+  .status-yellow {
+    @apply text-status-yellow-text bg-status-yellow-bg ring-1 ring-inset ring-status-yellow-ring/20;
+  }
+  .status-red {
+    @apply text-status-red-text bg-status-red-bg ring-1 ring-inset ring-status-red-ring/20;
+>>>>>>> madhavi/main
   }
 }
