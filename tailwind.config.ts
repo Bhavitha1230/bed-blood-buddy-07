@@ -8,14 +8,17 @@ export default {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { "2xl": "1400px" },
     },
     extend: {
       fontFamily: {
+<<<<<<< HEAD
         display: ['Plus Jakarta Sans', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
+=======
+        sans: ["Geist", "system-ui", "sans-serif"],
+        mono: ["Geist Mono", "ui-monospace", "monospace"],
+>>>>>>> madhavi/main
       },
       colors: {
         border: "hsl(var(--border))",
@@ -81,6 +84,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "status-green": {
+          text: "hsl(var(--status-green-text))",
+          bg: "hsl(var(--status-green-bg))",
+          ring: "hsl(var(--status-green-ring))",
+        },
+        "status-yellow": {
+          text: "hsl(var(--status-yellow-text))",
+          bg: "hsl(var(--status-yellow-bg))",
+          ring: "hsl(var(--status-yellow-ring))",
+        },
+        "status-red": {
+          text: "hsl(var(--status-red-text))",
+          bg: "hsl(var(--status-red-bg))",
+          ring: "hsl(var(--status-red-ring))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -96,7 +114,11 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+<<<<<<< HEAD
         "pulse-glow": {
+=======
+        "pulse-alert": {
+>>>>>>> madhavi/main
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.6" },
         },
@@ -104,7 +126,11 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+<<<<<<< HEAD
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+=======
+        "pulse-alert": "pulse-alert 2s ease-in-out infinite",
+>>>>>>> madhavi/main
       },
     },
   },
